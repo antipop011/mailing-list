@@ -1,0 +1,97 @@
+body {
+    font-family: playfair display;
+    font-weight: normal;
+    font-style: normal;
+    background: #000000;
+    color: #989596;
+    font-size: 20px;
+
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; /* this will center the fields because the input fields are treated as text */
+    box-sizing: border-box; /* this will prevent thedivs from spilling outside the parent div */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #d2d2d2;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #d2d2d2;
+  margin: 70px 0;
+  display: inline-block;
+}
+
+form {
+  width: 100%;
+  padding: 0 15px;
+  max-width: 570px;
+  clear: both;
+  margin: 0 auto;
+
+}
+select {
+  /* these will delete the stylings of the browsers and let you style the select tag */
+  -webkit-appearance:none; /*chrome and safari */
+  -moz-appearance:none; /*mozilla */
+  -o-appearance:none; /*opera*/
+  -ms-appearance:none; /*microsoft*/
+  /* order matters. these have to go first otherwise they will cancel all the stylings before them */
+
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  font-family: playfair display;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  box-sizing:border-box;
+  background: url(arrow-icon.png) center right #d2d2d2 no-repeat; /* the image I downloaded was not transparent (apparently). ALWAYS CHECK IN PHOTOSHOP */
+  background-size: 25px;
+}
+
+#first-name, #last-name, #email, #date { /* TAGS DON'T NEED IDENTIFIERS,. Classes are identified with a "." and ids are identified with a "#" */
+  background: #d2d2d2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  font-family: playfair display;
+  font-weight: bold;
+  font-style: normal;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#button {
+  background: #989596;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  font-family: playfair display;
+  font-weight: bold;
+  font-style: normal;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#button:hover {
+  transition: .3s;
+  background: #d2d2d2;
+  cursor: pointer;
+}

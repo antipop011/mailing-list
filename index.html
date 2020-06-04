@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!-- comment -->
+  <head>
+    <meta charset="utf-8">
+    <title>Mailing List Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> <!-- this links the google font -->
+  </head>
+  <body>
+    <div class="wrapper" style="background-image: url(http://www.architectsofficial.com/wp-content/themes/architects/assets/mailing-list-background.jpg")> <!-- This is the first and largest div, to encompass all the elements and hold the background image -->
+    <div class="mailing-list">  <!-- holds the title and the input fields (the form) -->
+      <h1 class="title">Mailing List</h1>
+      <form action="index.html" method="post">
+        <div class="fields">
+        <input id="first-name" placeholder="First name" data-msg-required="Please enter your first name" type="text" name="first name" required>
+        </div>
+        <div class="fields">
+        <input id="last-name" placeholder="Last name" data-msg-required="Please enter your last name" type="text" name="last name" required>
+        </div>
+        <div class="fields">
+        <input id="email" placeholder="Email address *" type="email" name="email" required>
+        </div>
+        <div class="fields">
+        <select id="country" class="country" name="country">
+          <option value="Select Country">Select Country</option>
+          <option value="Select Country">Serbia</option>
+          <option value="Select Country">France</option>
+          <option value="Select Country">Germany</option>
+          <option value="Select Country">Brazil</option>
+        </select>
+        </div>
+        <div class="fields">
+        <input id="date" placeholder="Date of Birth (YYYY-MM-DD)" type="text" name="date" required>
+        </div>
+        <div class="button">
+        <input id="button" type="submit" name="Sign up" value="Sign up">
+        </div>
+      </form>
+
+    </div>
+    </div>
+
+  </body>
+</html>
